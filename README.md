@@ -72,22 +72,22 @@ rule RedLine_Stealer_Kenneth_Triage {
 }Splunk / Sysmon Hunt (SOC)splindex=sysmon EventCode=1 Image="*\\f7856dc0*"
 | table _time, Computer, User, CommandLine, ParentImage
 
+
 index=sysmon EventCode=3 Image="*f7856dc0*"
-| stats count by dest_ip, dest_port, ComputerTools UsedKali Linux, file, strings, floss, pe-bear, die, YARASafety & EthicsAnalyzed 100% offline in isolated VMSample never executedNo live malware binaries in repository - only hashes, IoCs, and detection logicSkills DemonstratedStatic Malware Triage | YARA Rule Development | IoC Extraction | Detection Engineering | SOC Threat HuntingPortfolio Project 1 / SOC Analyst Trackjavascript
+| stats count by dest_ip, dest_port, Computer
+```
 
 
-
-
-##Tools Used
+## Tools Used
 Kali Linux, file, strings, YARA
 
 
 
-##Safety & Ethics
+## Safety & Ethics
 Analyzed 100% offline in isolated VMSample never executed - static triage onlyNo live malware binaries in repository - only hashes, IoCs, and detection logicFor defensive and educational purposes only
 
 
 
-##Skills Demonstrated
+## Skills Demonstrated
 Static Malware Triage | YARA Rule Development | IoC Extraction | Detection Engineering | SOC Threat Hunting
 
