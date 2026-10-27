@@ -21,3 +21,6 @@ Kali, strings, floss, file, YARA, PE-Bear
 Offline VM only. No binaries in repo, only IoCs.
 
 SOC Skills: Static Triage, YARA, Splunk, IoC Extraction
+
+
+![YARA Detection Proof](evidence.png)
