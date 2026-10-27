@@ -74,3 +74,20 @@ rule RedLine_Stealer_Kenneth_Triage {
 
 index=sysmon EventCode=3 Image="*f7856dc0*"
 | stats count by dest_ip, dest_port, ComputerTools UsedKali Linux, file, strings, floss, pe-bear, die, YARASafety & EthicsAnalyzed 100% offline in isolated VMSample never executedNo live malware binaries in repository - only hashes, IoCs, and detection logicSkills DemonstratedStatic Malware Triage | YARA Rule Development | IoC Extraction | Detection Engineering | SOC Threat HuntingPortfolio Project 1 / SOC Analyst Trackjavascript
+
+
+
+
+##Tools Used
+Kali Linux, file, strings, YARA
+
+
+
+##Safety & Ethics
+Analyzed 100% offline in isolated VMSample never executed - static triage onlyNo live malware binaries in repository - only hashes, IoCs, and detection logicFor defensive and educational purposes only
+
+
+
+##Skills Demonstrated
+Static Malware Triage | YARA Rule Development | IoC Extraction | Detection Engineering | SOC Threat Hunting
+
